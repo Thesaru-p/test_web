@@ -1,4 +1,4 @@
-console.log('Hello World');
+/*console.log('Hello World');
 let name='John';
 console.log(name);
 let firstName='Jane';
@@ -22,7 +22,7 @@ console.log(selectedColors.length);
 
 
 function isgreet(name){
-    console.log('helllo World'+name);
+    console.log('helllo World '+ name);
 }
 
 isgreet('thesaru');
@@ -34,6 +34,7 @@ function isPrime(number){
     while(number>2){
         if(num%(number-1)==0){
             console.log('number is not prime number');
+                document.getElementById("head").innerHTML="The number is not prime.";
             p=false;
             break;
             
@@ -43,10 +44,49 @@ function isPrime(number){
     }
     if(p){
         console.log('number is  prime number');
+        document.getElementById("head").innerHTML="The number is prime.";
     }
     
 }
-isPrime(1000009);
+isPrime(5);
+console.error('This is an error message');
+console.warn('this is an warning message');
+console.error("This is an"+pi);*/
+
+
+/*function nextDate(date){
+    date=Number(date);
+    let newdate;
+    if(date>=24){
+        newdate=date-23;
+    }
+    else{
+        newdate=date+7;
+    }
+    console.log(newdate+'th');
+    document.getElementById("res").innerHTML=newdate;
+
+}
+
+nextDate(23);
+
+let username;
+username=window.prompt("What is your user name?");
+if(username==null || username==""){
+    window.alert("ehma hknna denna ba itn");
+
+}
+else{
+    window.alert("Welcome"+username);
+    document.getElementById("wel").innerHTML="Welcome "+username;
+    document.write("Welcome "+username);
+    window.open("contact.html");
+    window.close("index.html");
+}*/
+
+function delee(){
+    document.getElementById("para").innerHTML="";
+}
 
 
 
